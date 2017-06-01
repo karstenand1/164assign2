@@ -2,10 +2,7 @@
 <html>
 <body>
 
-<video width="400" controls>
-  <source src="/videos/mov_bbb.mp4" type="video/mp4">
-  Your browser does not support HTML5 video.
-</video>
+<%= video_tag (["mov_bbb.mp4"] :size => "320x240", :controls => true, :autobuffer => true) %>
 
 <p>
 Video courtesy of
