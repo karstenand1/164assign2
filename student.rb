@@ -3,8 +3,7 @@ require 'dm-migrations'
 
 # define a class to represent table
 class Student
-  # include ERB::Util
-  # attr_accessor :title
+
   include DataMapper::Resource
   property :id, Serial    #auto increment primary key
   property :name, String

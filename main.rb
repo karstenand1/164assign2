@@ -38,7 +38,7 @@ get '/video' do
   erb :video
 end
 
-#login and logout slim
+#login and logout
 get'/login'do
   erb :login
 end
