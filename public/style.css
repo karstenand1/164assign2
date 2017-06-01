@@ -1,0 +1,77 @@
+
+html {
+    background-color: #ccc;
+}
+body {
+    width:700px;
+    height:900px;
+    background-color: #dddcd9;
+    margin:2em auto 2em;
+    padding:25px;
+    position:relative;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+.middle
+{
+	position:relative;
+	left:130px;
+	padding:20px;
+}
+
+h1 {
+  color: #903;
+  font: 32px Helvetica, Arial, sans-serif;
+}
+
+header h1 {
+  font-size: 40px;
+  line-height: 80px;
+  background-repeat: no-repeat;
+  background-position: left bottom;
+   background-size: 90px, 130px;
+  padding-left: 185px;
+}
+
+nav ul
+{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background: black;
+    overflow: hidden;
+}
+
+nav a
+{
+    text-decoration: none;
+    display: block;
+    padding: 8px;
+    background: black;
+    color: white;
+}
+
+a:hover
+{
+	background: darken(blue, 20%)
+}
+
+nav li
+{
+    float: left;
+}
+
+nav
+{
+	font-weight: bold;
+	background: black;
+	color: white;
+}
+
+p {
+  font: 15px Helvetica, Arial, sans-serif;
+}
+
+label {
+  display: block;
+}

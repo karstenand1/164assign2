@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+	<body>
+		<% if @student.any? %>
+		<ul>
+		   <% @student.each do |student| %>
+ 			<li><a href="/students/<%= student.id %>"><%= student.comment %></a></li>
+ 		   <% end %>
+		</ul>
+		<% else %>
+			<p>There are no comments currently!</p>
+		<% end %>
+		<a href="/logout"> Log In/Out</a>
+	</body>
+</html>

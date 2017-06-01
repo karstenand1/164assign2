@@ -1,0 +1,15 @@
+
+<label for="name">Name</label>
+<input type="text" name="student[name]" value="<%= @student.name %>">
+
+<label for="year">year</label>
+<input type="text" name="student[year]" value="<%= @student.year %>">
+
+<label for="comment">Comment</label>
+<input type="text" name="student[comment]" value="<%= @student.comment%>">
+
+<label for="birthday"> Birthday(mm/dd/yyyy):</label>
+<input type="text" name="student[birthday]" value="<%= @student.birthday.strftime('%m/%d/%Y') if @student.birthday %>">
+
+<input type="submit" value="Save">
+

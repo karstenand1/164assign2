@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= @title || "Welcome to the student page!"%> </title>
+    <link rel="stylesheet" href="/style.css">
+  </head>
+  <body>
+    <header>
+      <img src="/images/studs.png" alt="student pic" style="width:304px;height:228px;float:left;">
+      <h1>Student Information System</h1>
+      <br><br><br>
+      <%= erb :nav %>
+    </header>
+    <%= yield %>
+  </body>
+</html>

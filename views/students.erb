@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+	<body>
+		<a href="/students/new">Create a new student</a>
+		<% if @student.any? %>
+		<ul>
+		   <% @student.each do |student| %>
+ 			<li><a href="/students/<%= student.id %>"><%= student.name %></a></li>
+ 		   <% end %>
+		</ul>
+		<% else %>
+			<p>There are no students currently!</p>
+		<% end %>
+		<a href="/logout"> Log In/Out</a>
+	</body>
+</html>
